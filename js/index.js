@@ -6,7 +6,6 @@ $.ajaxSetup({
 //Getting user coordinates from API
 $(function() {
     var newLoc;
-    var coordArr;
     $.getJSON('http://ipinfo.io', function(data) {
         newLoc = data.city + ',' + data.country;
     });
@@ -104,8 +103,6 @@ $(function() {
 
     //Working with user request
     $('#submit').on('click', function sendData() {
-        var cityName = $('#city').val();
-        var countryName = $('#country').val();
         if ($('#city').val() === '' || $('#country').val() === '') {
             alert('Fill out all the fields please.');
             return;
