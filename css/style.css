@@ -24,6 +24,10 @@ h5 {
     font-size: 18px;
 }
 
+iframe {
+  border: 0px;
+}
+
 .info {
     padding-left: 40px;
 }
