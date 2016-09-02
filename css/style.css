@@ -16,16 +16,19 @@ table {
     margin-bottom: 10px;
 }
 
-form {
-    margin-top: 20px;
-}
-
 h5 {
     font-size: 18px;
 }
 
 iframe {
-  border: 0px;
+    border: 0px;
+}
+
+.jumbotron {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .info {

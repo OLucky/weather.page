@@ -106,15 +106,15 @@ $(function() {
     $('#submit').on('click', function sendData() {
         var cityName = $('#city').val();
         var countryName = $('#country').val();
-          if ($('#city').val() === '' || $('#country').val() === ''){
-                alert('Fill out all the fields please.');
-                return;
-}
-            newLoc =  $('#city').val() + ',' + $('#country').val();
-            getAPI();
-            pasteData();
-            console.log(weatherObj);
-            getBG();
-            setTime();
-        });
+        if ($('#city').val() === '' || $('#country').val() === '') {
+            alert('Fill out all the fields please.');
+            return;
+        }
+        newLoc = $('#city').val() + ',' + $('#country').val();
+        getAPI();
+        pasteData();
+        console.log(weatherObj);
+        getBG();
+        setTime();
+    });
 });

@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>O'Lucky's Weather Page</title>
@@ -16,8 +15,8 @@
         <h2 id="location" class="text-center">No data</h2>
         <h4 id="time" class="text-center">No data</h4>
     <div class= "row">
-      <div class="tabels col-xs-5 col-xs-offset-1">
-        <table>
+      <div class="tabels col-xs-offset-1 col-xs-10  col-md-offset-1 col-md-5">
+        <table class="col-xs-offset-1 col-xs-5 col-md-offset-1 col-md-10">
           <tr>
             <th class="cell">Temperature:<br><em>(click to change metric)</em></th>
   <td id="temp" class="cell data">No data</td>
@@ -35,7 +34,7 @@
   <td class="cell"><img id="icon"></img></td>
 </tr>
 </table>
-<form>
+<form class="col-xs-offset-1 col-xs-5 col-md-offset-2 col-md-10">
 <h5><b>Check another place</b></h5>
 <label>City:
 <input id="city" type="text" class="form-control" value="">
@@ -43,10 +42,10 @@
 <label>Country/State:
 <input id="country" type="text" class="form-control" value="">
 </label>
-<input id="submit" class="col-xs-6 btn btn-info" value="Submit" />
+<button type='button' id="submit" class="col-xs-6 btn btn-info">Submit</button>
 </form>
 </div>
-  <iframe class="col-xs-5" width="350" height="380" allowfullscreen></iframe>
+  <iframe class="col-xs-offset-1 col-xs-10 col-md-4" width="350" height="380" allowfullscreen></iframe>
 </div>
 </div>
 </body>
