@@ -19,7 +19,7 @@ $(function() {
     }
     //Getting responsive background
     function getBG() {
-        $.getJSON('json/bgCLRs.json', function(data) {
+        $.getJSON('https://raw.githubusercontent.com/OLucky/weather.page/master/json/bgCLRs.json', function(data) {
             var bgCLRs = data;
             $('body').css('background-color', bgCLRs[weatherObj.weather[0].main].color1);
             $('body').css('background', '-webkit-linear-gradient(to top, ' + bgCLRs[weatherObj.weather[0].main].color1 + ',' + bgCLRs[weatherObj.weather[0].main].color2 + ')');
@@ -106,20 +106,15 @@ $(function() {
     $('#submit').on('click', function sendData() {
         var cityName = $('#city').val();
         var countryName = $('#country').val();
-        $.get('http://localhost/getloc.php', {
-            name: cityName,
-            country: countryName
-        }, function(dataNew) {
-            if (dataNew === "NO") {
+          if ($('#city').val() === '' || $('#country').val() === ''){
                 alert('Fill out all the fields please.');
                 return;
-            }
-            newLoc = dataNew;
+}
+            newLoc =  $('#city').val() + ',' + $('#country').val();
             getAPI();
             pasteData();
             console.log(weatherObj);
             getBG();
             setTime();
         });
-    });
 });
