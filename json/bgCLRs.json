@@ -1,0 +1,39 @@
+{
+    "Clear": {
+        "color1": ["#4CA1AF"],
+        "color2": ["#C4E0E5"]
+    },
+    "Drizzle": {
+        "color1": ["#83a4d4"],
+        "color2": ["#b6fbff"]
+    },
+    "Thunderstorm": {
+        "color1": ["#4B79A1"],
+        "color2": ["#283E51"]
+    },
+    "Rain": {
+        "color1": ["#457fca"],
+        "color2": ["#5691c8"]
+    },
+    "Snow": {
+        "color1": ["#ECE9E6"],
+        "color2": ["#FFFFFF"]
+    },
+    "Mist": {
+        "color1": ["#B993D6"],
+        "color2": ["#8CA6DB"]
+    },
+    "Clouds": {
+        "color1": ["#abbaab"],
+        "color2": ["#ffffff"]
+    },
+    "Extreme": {
+        "color1": ["#8E0E00"],
+        "color2": ["#1F1C18"]
+    },
+    "Additional": {
+        "color1": ["#2c3e50"],
+        "color2": ["#3498db"]
+    }
+
+}

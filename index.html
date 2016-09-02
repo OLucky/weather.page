@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>O'Lucky's Weather Page</title>
+    <meta name="viewpoint" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="main" class="jumbotron col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+        <h2 id="location" class="text-center">No data</h2>
+        <h4 id="time" class="text-center">No data</h4>
+    <div class= "row">
+      <div class="tabels col-xs-5 col-xs-offset-1">
+        <table>
+          <tr>
+            <th class="cell">Temperature:<br><em>(click to change metric)</em></th>
+  <td id="temp" class="cell data">No data</td>
+</tr>
+<tr>
+  <th class="cell">Condition:</th>
+  <td id="descr" class="cell data">No data</td>
+</tr>
+<tr>
+  <th class="cell">Details:</th>
+  <td id="det" class="cell data">No data</td>
+</tr>
+<tr>
+  <th class="cell">Icon:</th>
+  <td class="cell"><img id="icon"></img></td>
+</tr>
+</table>
+<form>
+<h5><b>Check another place</b></h5>
+<label>City:
+<input id="city" type="text" class="form-control" value="">
+</label>
+<label>Country/State:
+<input id="country" type="text" class="form-control" value="">
+</label>
+<input id="submit" class="col-xs-6 btn btn-info" value="Submit" />
+</form>
+</div>
+  <iframe class="col-xs-5" width="350" height="380" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</body>
+
+
+</html>

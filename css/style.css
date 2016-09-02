@@ -1,0 +1,61 @@
+body {
+    background-size: cover;
+    font-family: 'Slabo 27px', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input {
+    width: 20px;
+}
+
+table {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.info {
+    padding-left: 40px;
+}
+
+.cell {
+    border: 1px solid;
+    padding: 5px;
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+}
+
+.data {
+    font-size: 20px;
+}
+
+#location {
+    margin-top: -10px;
+}
+
+#icon {
+    width: 50px;
+    height: auto;
+}
+
+#temp {
+    cursor: pointer;
+}
+
+#main {
+    display: block;
+    background-color: rgba(240, 255, 255, 0.75)
+}
